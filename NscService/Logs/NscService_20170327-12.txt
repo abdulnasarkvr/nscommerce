@@ -1,0 +1,48 @@
+
+
+Date: 3/27/2017 12:46:26 PM|IP: ::1|UserID: 
+ex: System.DivideByZeroException: Attempted to divide by zero.
+   at NscService.Controllers.ProductController.GetList(Int32 pageNo, Int32 pageSize, String searchKey, Nullable`1 CategoryID) in C:\Users\Abdul\Google Drive\materials\ecommerce\Technical\Solution\Nscommerce\NscService\Controllers\ProductController.cs:line 21
+ex.Message: Attempted to divide by zero.
+ex.StackTrace:    at NscService.Controllers.ProductController.GetList(Int32 pageNo, Int32 pageSize, String searchKey, Nullable`1 CategoryID) in C:\Users\Abdul\Google Drive\materials\ecommerce\Technical\Solution\Nscommerce\NscService\Controllers\ProductController.cs:line 21
+ex.Source: NscService
+innerexceptions: Exception type: System.DivideByZeroException
+Message       : Attempted to divide by zero.
+Stacktrace:
+   at NscService.Controllers.ProductController.GetList(Int32 pageNo, Int32 pageSize, String searchKey, Nullable`1 CategoryID) in C:\Users\Abdul\Google Drive\materials\ecommerce\Technical\Solution\Nscommerce\NscService\Controllers\ProductController.cs:line 21
+
+
+
+
+
+
+Date: 3/27/2017 12:46:42 PM|IP: ::1|UserID: 
+ex: System.DivideByZeroException: Attempted to divide by zero.
+   at NscService.Controllers.ProductController.GetList(Int32 pageNo, Int32 pageSize, String searchKey, Nullable`1 CategoryID) in C:\Users\Abdul\Google Drive\materials\ecommerce\Technical\Solution\Nscommerce\NscService\Controllers\ProductController.cs:line 21
+ex.Message: Attempted to divide by zero.
+ex.StackTrace:    at NscService.Controllers.ProductController.GetList(Int32 pageNo, Int32 pageSize, String searchKey, Nullable`1 CategoryID) in C:\Users\Abdul\Google Drive\materials\ecommerce\Technical\Solution\Nscommerce\NscService\Controllers\ProductController.cs:line 21
+ex.Source: NscService
+innerexceptions: Exception type: System.DivideByZeroException
+Message       : Attempted to divide by zero.
+Stacktrace:
+   at NscService.Controllers.ProductController.GetList(Int32 pageNo, Int32 pageSize, String searchKey, Nullable`1 CategoryID) in C:\Users\Abdul\Google Drive\materials\ecommerce\Technical\Solution\Nscommerce\NscService\Controllers\ProductController.cs:line 21
+
+
+
+
+
+
+Date: 3/27/2017 12:47:05 PM|IP: ::1|UserID: 
+ex: System.DivideByZeroException: Attempted to divide by zero.
+   at NscService.Controllers.ProductController.GetList(Int32 pageNo, Int32 pageSize, String searchKey, Nullable`1 CategoryID) in C:\Users\Abdul\Google Drive\materials\ecommerce\Technical\Solution\Nscommerce\NscService\Controllers\ProductController.cs:line 21
+ex.Message: Attempted to divide by zero.
+ex.StackTrace:    at NscService.Controllers.ProductController.GetList(Int32 pageNo, Int32 pageSize, String searchKey, Nullable`1 CategoryID) in C:\Users\Abdul\Google Drive\materials\ecommerce\Technical\Solution\Nscommerce\NscService\Controllers\ProductController.cs:line 21
+ex.Source: NscService
+innerexceptions: Exception type: System.DivideByZeroException
+Message       : Attempted to divide by zero.
+Stacktrace:
+   at NscService.Controllers.ProductController.GetList(Int32 pageNo, Int32 pageSize, String searchKey, Nullable`1 CategoryID) in C:\Users\Abdul\Google Drive\materials\ecommerce\Technical\Solution\Nscommerce\NscService\Controllers\ProductController.cs:line 21
+
+
+
+

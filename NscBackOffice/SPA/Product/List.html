@@ -1,0 +1,279 @@
+﻿
+<ol class="breadcrumb">
+
+    <li class="breadcrumb-item active">Products</li>
+</ol>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        <!--<div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+
+                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search
+                    </button>
+
+                    <a href="/product/create" class="btn btn-default" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>New
+                    </a>
+
+
+
+                </div>
+                <div class="panel-body">
+                    <form>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Product Code" id="name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Product Name" id="details">
+                        </div>
+
+
+                     
+                    </form>
+                </div>
+            </div>
+
+
+        </div>-->
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+
+                    <!--<ul class="pagination pagination-sm">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>-->
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="/product/create" class="btn btn-default" aria-label="Left Align">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>New
+                            </a>
+                        </div>
+
+
+                        <div class="col-md-9">
+
+                            <div class="input-group" style="width:100px;">
+
+                                <span class="input-group-addon" id="basic-addon1">Page</span>
+                                <div class="input-group-btn">
+
+                                    <button class="btn btn-default" type="button">&lt;</button>
+                                </div>
+                                <div class="input-group-btn">
+                                    <input class="form-control" type="text" style="width: 50px;" value="2">
+                                </div>
+                                <div class="input-group-btn">
+
+                                    <button class="btn btn-default" type="button">&gt;</button>
+
+                                </div>
+
+                                <span class="input-group-addon" id="basic-addon1">of 30 pages</span>
+                                <span class="input-group-addon" id="basic-addon1">|</span>
+                                <div class="input-group-btn">
+
+                                    <select class="form-control" id="sel1" style="width:100px;">
+
+                                        <option selected="selected">20 rows</option>
+
+                                        <option>50 rows</option>
+                                        <option>100 rows</option>
+
+                                    </select>
+
+
+
+                                </div>
+
+                                <span class="input-group-addon" id="basic-addon1"> per page</span>
+
+                                <span class="input-group-addon" id="basic-addon1">|</span>
+                                <span class="input-group-addon" id="basic-addon1">Total 324567 rows</span>
+
+                                <div class="input-group-btn">
+
+                                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+
+
+                            </div>
+                           
+                        </div>
+                    
+
+                    </div>
+
+                    </div>
+                <div class="panel-body">
+
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                   
+                                    <th>Id</th>
+                                    <th>Code</th>
+                                    <th>Name</th>
+                                    <th>Category</th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                   
+                                    <td style="width:15%;">
+                                      
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="From">
+                                            <span class="input-group-addon" id="basic-addon1">><</span>
+                                            <input type="text" class="form-control" placeholder="To">
+                                        </div>
+
+                                    </td>
+                                    <td style="width:15%;">
+                                        <input type="text" class="form-control" id="details" placeholder="Code">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control" id="details" placeholder="Name">
+                                    </td>
+                                    <td>
+                                        <select class="form-control" id="sel1">
+                                            <option>Any</option>
+                                            <option>Women</option>
+                                            <option>Men</option>
+                                            <option>Kids</option>
+
+                                        </select>
+                                    </td>
+                                    <td style="width:15%;">
+                                      
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="From">
+                                            <span class="input-group-addon" id="basic-addon1">><</span>
+                                            <input type="text" class="form-control"  placeholder="To">
+                                        </div>
+
+                                    </td>
+                                   
+                                    <td style="width:10%;">
+
+                                        <select class="form-control" id="sel1">
+                                            <option>Any</option>
+                                            <option>Active</option>
+                                            <option>Inactive</option>
+                                          
+
+                                        </select>
+                                    </td>
+                                     
+                                   
+                                </tr>
+                              
+                                <tr>
+                                    
+                                    <td>1,015</td>
+                                    <td>sodales</td>
+                                    <td>sodales</td>
+                                    <td>ligula</td>
+                                    <td>in</td>
+                                    <td>libero</td>
+                                   
+                                  
+                                </tr>
+                                <tr>
+
+                                    <td>1,015</td>
+                                    <td>sodales</td>
+                                    <td>sodales</td>
+                                    <td>ligula</td>
+                                    <td>in</td>
+                                    <td>libero</td>
+
+
+                                </tr>
+                                <tr>
+
+                                    <td>1,015</td>
+                                    <td>sodales</td>
+                                    <td>sodales</td>
+                                    <td>ligula</td>
+                                    <td>in</td>
+                                    <td>libero</td>
+
+
+                                </tr>
+                                <tr>
+
+                                    <td>1,015</td>
+                                    <td>sodales</td>
+                                    <td>sodales</td>
+                                    <td>ligula</td>
+                                    <td>in</td>
+                                    <td>libero</td>
+
+
+                                </tr>
+                                <tr>
+
+                                    <td>1,015</td>
+                                    <td>sodales</td>
+                                    <td>sodales</td>
+                                    <td>ligula</td>
+                                    <td>in</td>
+                                    <td>libero</td>
+
+
+                                </tr>
+                                <tr>
+
+                                    <td>1,015</td>
+                                    <td>sodales</td>
+                                    <td>sodales</td>
+                                    <td>ligula</td>
+                                    <td>in</td>
+                                    <td>libero</td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+</div>
+
+<div class="cs-loader" ng-show="isloading">
+    <div class="cs-loader-inner">
+        <label>	●</label>
+        <label>	●</label>
+        <label>	●</label>
+        <label>	●</label>
+        <label>	●</label>
+        <label>	●</label>
+    </div>
+</div>

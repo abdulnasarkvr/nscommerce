@@ -1,0 +1,58 @@
+﻿
+    
+  
+
+    <div id="wrapper" class="active" ng-app="NsCommerceAdminApp">
+        <toaster-container toaster-options="{'time-out': 3000, 'close-button':true}"></toaster-container>
+        <!-- Sidebar -->
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul id="sidebar_menu" class="sidebar-nav">
+                <li class="sidebar-brand"><a id="menu-toggle" href="javascript:void(0)"><<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
+            </ul>
+            <ul class="sidebar-nav" id="sidebar">               
+
+                <li><a href="/">Dashboard<span class="sub_icon nsicon nsicon-dashboard"></span></a></li>
+
+                <li><a href="/product/list">Orders<span class="sub_icon nsicon nsicon-orders"></span></a></li>
+                <li><a href="/product/create">Invoices<span class="sub_icon nsicon nsicon-invoices"></span></a></li>
+                <li><a href="/product">Shipments<span class="sub_icon nsicon nsicon-shipments"></span></a></li>               
+                <li><a href="/product">Accounts<span class="sub_icon nsicon nsicon-accounts"></span></a></li>
+
+                <li><a href="/product/list">Products<span class="sub_icon nsicon nsicon-products"></span></a></li>
+                <li><a href="/product/create">Categories<span class="sub_icon nsicon nsicon-categories"></span></a></li>
+
+                <li><a href="/product">Attributes<span class="sub_icon nsicon nsicon-attributes"></span></a></li>
+                <li><a href="/product/list">Attribute Sets<span class="sub_icon nsicon nsicon-attributesets"></span></a></li>
+                <li><a href="/product/list">Brands<span class="sub_icon nsicon nsicon-brands"></span></a></li>
+
+                <li><a href="/product/list">Suppliers<span class="sub_icon nsicon nsicon-suppliers"></span></a></li>
+
+                <li><a href="/product/list">Tax<span class="sub_icon nsicon nsicon-tax"></span></a></li>
+
+                <li><a href="/product/create">System Users<span class="sub_icon nsicon nsicon-users"></span></a></li>
+                <li><a href="/product">System Roles<span class="sub_icon nsicon nsicon-roles"></span></a></li>
+
+                <li><a href="/product/list">Clients<span class="sub_icon nsicon nsicon-clients"></span></a></li>
+                <li><a href="/product/list">Client Profiles<span class="sub_icon nsicon nsicon-clientprofiles"></span></a></li>
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <!-- Keep all page content within the page-content inset div! -->
+            <div class="page-content inset">
+                <div class="row">
+                    <div class="col-md-12 nscontent" ng-view>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+   
+   

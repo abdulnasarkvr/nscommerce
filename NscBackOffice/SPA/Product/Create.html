@@ -1,0 +1,135 @@
+﻿
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/product/list">Products</a></li>
+        <li class="breadcrumb-item active">Create</li>
+    </ol>
+
+<form name="newProductForm" novalidate>
+    <div class="panel panel-default">
+
+        <div class="panel-heading">
+
+
+            <button type="button" ng-click="SaveProduct(false)" class="btn btn-default" aria-label="Left Align" ng-disabled="newProductForm.$invalid">
+                <span class="glyphicon glyphicon-save" aria-hidden="true"></span>Save & Stay
+            </button>
+            <button type="button" ng-click="SaveProduct(true)" class="btn btn-default" aria-label="Left Align" ng-disabled="newProductForm.$invalid">
+                <span class="glyphicon glyphicon-save" aria-hidden="true"></span>Save & Proceed
+            </button>
+
+        </div>
+        <div class="panel-body">
+
+
+
+
+
+            <div class="tabbable tabs-left">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" data-target="#a">Basic Details</a></li>
+                    <li><a data-toggle="tab" data-target="#b">Descriptions</a></li>
+                    <li><a data-toggle="tab" data-target="#c">Inventory</a></li>
+                    <li><a data-toggle="tab" data-target="#g">SEO</a></li>                    
+                    <li><a data-toggle="tab" data-target="#f">Settings</a></li>
+                    
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="a">
+
+                        <div class="form-group" ng-class="{ 'has-error' : newProductForm.productCode.$invalid && !newProductForm.productCode.$pristine }">
+                            <label>Product Code</label>
+                            <input type="text" class="form-control" name="productCode" ng-model="product.productCode"
+                                   required placeholder="Product Code" ng-pattern="/^[a-zA-Z0-9]*$/">
+                            <p ng-show="newProductForm.productCode.$error.required  && !newProductForm.productCode.$pristine" class="help-block">Product Code is required.</p>
+                            <p ng-show="newProductForm.productCode.$error.pattern && !newProductForm.productCode.$pristine" class="help-block">Only alphabets, numbers allowed.</p>
+
+                        </div>
+
+                        <div class="form-group" ng-class="{ 'has-error' : newProductForm.productName.$invalid && !newProductForm.productName.$pristine }">
+                            <label>Product Name</label>
+                            <input type="text" class="form-control" name="productName" ng-model="product.productName" 
+                                   required placeholder="Product Name" ng-pattern="/^[a-zA-Z0-9 ]*$/">
+                            <p ng-show="newProductForm.productName.$error.required  && !newProductForm.productName.$pristine" class="help-block">Product Name is required.</p>
+                            <p ng-show="newProductForm.productName.$error.pattern && !newProductForm.productName.$pristine" class="help-block">Only alphabets, numbers, space allowed.</p>
+
+                         </div>
+
+                        <div class="form-group" ng-class="{ 'has-error' : newProductForm.productName.$invalid && !newProductForm.productName.$pristine }">
+                            <label>Product Weight</label>
+                            <input type="text" class="form-control" name="productName" ng-model="product.productName"
+                                   required placeholder="Product Name" ng-pattern="/^[a-zA-Z0-9 ]*$/">
+                            <p ng-show="newProductForm.productName.$error.required  && !newProductForm.productName.$pristine" class="help-block">Product Name is required.</p>
+                            <p ng-show="newProductForm.productName.$error.pattern && !newProductForm.productName.$pristine" class="help-block">Only alphabets, numbers, space allowed.</p>
+
+                        </div>
+
+
+
+                        <div class="form-group" ng-class="{ 'has-error' : newProductForm.productName.$invalid && !newProductForm.productName.$pristine }">
+                            <label>Selling Date From</label>
+                            <input type="text" class="form-control" name="productName" ng-model="product.productName+product.productName"
+                                   required placeholder="Product Name" ng-pattern="/^[a-zA-Z0-9 ]*$/">
+                            <p ng-show="newProductForm.productName.$error.required  && !newProductForm.productName.$pristine" class="help-block">Product Name is required.</p>
+                            <p ng-show="newProductForm.productName.$error.pattern && !newProductForm.productName.$pristine" class="help-block">Only alphabets, numbers, space allowed.</p>
+
+                        </div>
+
+                        <div class="form-group" ng-class="{ 'has-error' : newProductForm.productName.$invalid && !newProductForm.productName.$pristine }">
+                            <label>Selling Date To</label>
+                            <input type="text" class="form-control" name="productName" ng-model="product.productName"
+                                   required placeholder="Product Name" ng-pattern="/^[a-zA-Z0-9 ]*$/">
+                            <p ng-show="newProductForm.productName.$error.required  && !newProductForm.productName.$pristine" class="help-block">Product Name is required.</p>
+                            <p ng-show="newProductForm.productName.$error.pattern && !newProductForm.productName.$pristine" class="help-block">Only alphabets, numbers, space allowed.</p>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sel1">Brand</label>
+                            <select class="form-control" id="sel1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sel1">Status</label>
+                            <select class="form-control" id="sel1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="b">
+                        Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+                        Aliquam in felis sit amet augue.
+                    </div>
+                    <div class="tab-pane" id="c">
+                        Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+                        Quisque mauris augue, molestie tincidunt condimentum vitae.
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </div>
+</form>
+    <div class="cs-loader" ng-show="isloading">
+        <div class="cs-loader-inner">
+            <label>	●</label>
+            <label>	●</label>
+            <label>	●</label>
+            <label>	●</label>
+            <label>	●</label>
+            <label>	●</label>
+        </div>
+    </div>

@@ -1,0 +1,89 @@
+﻿
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/product/list">Products</a></li>        
+        <li class="breadcrumb-item active">Update</li>
+    </ol>
+
+
+      
+           
+
+                    
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" data-target="#product-details">Product Details</a></li>
+            <li><a data-toggle="tab" data-target="#menu1">Media</a></li>
+            <li><a data-toggle="tab" data-target="#menu2">Categories</a></li>
+            <li><a data-toggle="tab" data-target="#menu2">Discounts</a></li>     
+            <li><a data-toggle="tab" data-target="#stock">Stock</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="product-details" class="tab-pane fade in active">
+                <div class="panel panel-default">
+
+                    <div class="panel-heading">
+
+                                   
+                        <button type="button" class="btn btn-default" aria-label="Left Align"  ng-click="pop()">
+                            <span class="glyphicon glyphicon-save" aria-hidden="true"></span>Save
+                        </button>
+
+                    </div>
+                    <div class="panel-body">
+                      
+                        <div class="tabbable tabs-left">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" data-target="#home">Basic Details</a></li>
+                                <li><a data-toggle="tab" data-target="#a">Descriptions</a></li>
+                                <li><a data-toggle="tab" data-target="#b">Tax</a></li>
+                                <li><a data-toggle="tab" data-target="#c">Shipping</a></li>
+                                <li><a data-toggle="tab" data-target="#menu2">Inventory</a></li>
+                                <li><a data-toggle="tab" data-target="#menu2">Settings</a></li>
+                                <li><a data-toggle="tab" data-target="#menu2">SEO</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="a">
+                                    Lorem ipsum dolor sit amet, charetra varius quam sit amet vulputate.
+                                    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.
+                                </div>
+                                <div class="tab-pane" id="b">
+                                    Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+                                    Aliquam in felis sit amet augue.
+                                </div>
+                                <div class="tab-pane" id="c">
+                                    Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+                                    Quisque mauris augue, molestie tincidunt condimentum vitae.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>Menu 1</h3>
+                <p>Some content in menu 1.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Menu 2</h3>
+                <p>Some content in menu 2.</p>
+            </div>
+
+            <div id="stock" class="tab-pane fade">
+                <h3>SKU</h3>
+                <p>Some content in menu 2.</p>
+            </div>
+        </div>
+
+
+               
+     
+<div class="cs-loader" ng-show="isloading">
+    <div class="cs-loader-inner">
+        <label>	●</label>
+        <label>	●</label>
+        <label>	●</label>
+        <label>	●</label>
+        <label>	●</label>
+        <label>	●</label>
+    </div>
+</div>
