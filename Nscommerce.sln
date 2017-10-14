@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NscPayment", "NscPayment\Ns
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NscSeller", "NscSeller\NscSeller.csproj", "{83A10F27-FDF5-41E6-8CD3-7662FC74D605}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NscWebsite", "NscWebsite\NscWebsite.csproj", "{420EAF19-0028-4908-99C4-FB766B67F205}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{83A10F27-FDF5-41E6-8CD3-7662FC74D605}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83A10F27-FDF5-41E6-8CD3-7662FC74D605}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83A10F27-FDF5-41E6-8CD3-7662FC74D605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{420EAF19-0028-4908-99C4-FB766B67F205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{420EAF19-0028-4908-99C4-FB766B67F205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{420EAF19-0028-4908-99C4-FB766B67F205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{420EAF19-0028-4908-99C4-FB766B67F205}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
