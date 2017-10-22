@@ -22,3 +22,178 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* Set padding to display errors that occur during databinding */
+.padding-error {
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .nofloat {
+        float: none;
+        padding: 10px 15px;
+    }
+}
+.pagination{
+    margin:5px !important;
+}
+.nscontent{
+    padding-top:15px;
+}
+
+
+.cs-loader {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 3%;
+    width: 100%;
+    background-color: #fff;
+  
+    
+  
+}
+.cs-loader-inner {
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+  width: calc(100% - 200px);
+  color: #000;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.cs-loader-inner label {
+  font-size: 20px;
+  opacity: 0;
+  display:inline-block;
+}
+
+@keyframes lol {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  33% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+}
+
+@-webkit-keyframes lol {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-300px);
+  }
+  33% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+  }
+}
+
+.cs-loader-inner label:nth-child(6) {
+  -webkit-animation: lol 3s infinite ease-in-out;
+  animation: lol 3s infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(5) {
+  -webkit-animation: lol 3s 100ms infinite ease-in-out;
+  animation: lol 3s 100ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(4) {
+  -webkit-animation: lol 3s 200ms infinite ease-in-out;
+  animation: lol 3s 200ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(3) {
+  -webkit-animation: lol 3s 300ms infinite ease-in-out;
+  animation: lol 3s 300ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(2) {
+  -webkit-animation: lol 3s 400ms infinite ease-in-out;
+  animation: lol 3s 400ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(1) {
+  -webkit-animation: lol 3s 500ms infinite ease-in-out;
+  animation: lol 3s 500ms infinite ease-in-out;
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidnavWrapper {
+    transition: 0.5s;
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    opacity: .3;
+    z-index: 9999;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
