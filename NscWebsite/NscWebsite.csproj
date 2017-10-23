@@ -203,6 +203,7 @@
     <Content Include="Images\icons\attributes.svg" />
     <Content Include="Images\icons\attributesets.svg" />
     <Content Include="Images\icons\brands.svg" />
+    <Content Include="Images\icons\cart.png" />
     <Content Include="Images\icons\categories.svg" />
     <Content Include="Images\icons\clientprofiles.svg" />
     <Content Include="Images\icons\clients.svg" />
@@ -244,6 +245,14 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\app\app.js" />
     <Content Include="Scripts\app\controller.js" />
+    <Content Include="Scripts\bootstrap-4.0.0-beta-dist\css\bootstrap-grid.css" />
+    <Content Include="Scripts\bootstrap-4.0.0-beta-dist\css\bootstrap-grid.min.css" />
+    <Content Include="Scripts\bootstrap-4.0.0-beta-dist\css\bootstrap-reboot.css" />
+    <Content Include="Scripts\bootstrap-4.0.0-beta-dist\css\bootstrap-reboot.min.css" />
+    <Content Include="Scripts\bootstrap-4.0.0-beta-dist\css\bootstrap.css" />
+    <Content Include="Scripts\bootstrap-4.0.0-beta-dist\css\bootstrap.min.css" />
+    <Content Include="Scripts\bootstrap-4.0.0-beta-dist\js\bootstrap.js" />
+    <Content Include="Scripts\bootstrap-4.0.0-beta-dist\js\bootstrap.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
@@ -976,7 +985,14 @@
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
     <Content Include="Content\toaster.scss" />
+    <Content Include="Scripts\bootstrap-4.0.0-beta-dist\css\bootstrap-grid.css.map" />
+    <Content Include="Scripts\bootstrap-4.0.0-beta-dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="Scripts\bootstrap-4.0.0-beta-dist\css\bootstrap-reboot.css.map" />
+    <Content Include="Scripts\bootstrap-4.0.0-beta-dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Scripts\bootstrap-4.0.0-beta-dist\css\bootstrap.css.map" />
+    <Content Include="Scripts\bootstrap-4.0.0-beta-dist\css\bootstrap.min.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\JQuery 3.2.1\jquery.min.js" />
     <Content Include="Scripts\jquery.js" />
     <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\knockout-2.3.0.debug.js" />

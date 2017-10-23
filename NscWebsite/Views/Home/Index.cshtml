@@ -26,27 +26,93 @@
     <toaster-container toaster-options="{'time-out': 3000, 'close-button':true}"></toaster-container>
 
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <button type="button" class="navbar-toggle" onclick="openNav()" style="float:left !important; margin-left: 15px; display:inline !important;">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
+      
        
-        @Html.ActionLink("APP", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+       
+
+     
+        <div class="row" id="headerline1">
+            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3 cartdiv" style="text-align:left; padding-left: 20px;">
+                <span class="glyphicon glyphicon glyphicon-arrow-left" id="backbutton" style="display:none;     padding-right: 5px;"></span>
+                <button type="button" class="navbar-toggle" onclick="openNav()" style="float:none; padding:0;margin:0; display:inline !important;">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div> 
+            <div class="col-lg-1 col-md-2 col-sm-6 col-xs-6 nbranddiv">
+             <a href="#" class="navbar-brand" >contoso.com</a>
+            </div>
+
+            <div class="col-lg-8 col-md-8 visible-md visible-lg">
+
+                <div class="input-group" style="margin-top: 8px;">
+                    <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for..." style="    border-color: #fff; max-width: 2000px;">
+                    <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button" style="background-color: #4f667d;  border-color: #fff; color: #ffffff;">Go!</button>
+                    </span>
+                </div>
+               
+
+            </div>
+
+            <div class="col-sm-1 col-xs-1 visible-sm visible-xs cartdiv">
+           
+                <span class="glyphicon glyphicon-search" style="    padding-right: 5px;" id="searc-icon"></span>
+                 
+               
+               
+            </div>
+
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 cartdiv">
+
+                <span class="glyphicon glyphicon-shopping-cart" style="    padding-right: 5px;"></span>
+            </div>
 
 
+          
+        </div>
+
+  
 
 
-
-
-    </div>
+        </div>
 
  
+    <div class="navbar navbar-inverse navbar-fixed-top visible-sm visible-xs" id="search-box" style="display:none !important;">
+        <div class="row" id="headerline2" style="
+   
+    padding-top: 8px;">
+
+            <div class="col-sm-1 col-xs-1">
+                <span class="glyphicon glyphicon glyphicon-arrow-left" id="backbutton-search" style="
+    color: #fff;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 4px;"></span>
+            </div>
+            <div class="col-sm-10 col-xs-10">
+
+                <input type="search" id="mobsearch" placeholder="Search here" style="
+    width: 101%;
+    max-width: 2000px;
+    text-align: center;
+    border: none;
+    height: 35px;
+    background-color: #ffffff;
+    color: #4f667d;
+    font-size: 15px;
+    ">
+
+
+            </div>
+        </div>
+    </div>
         @*@RenderBody()*@
 
-   
-    <div id="sidnavWrapper" class="sidnavWrapper" onclick="closeNav()">
-    </div>
+
+        <div id="sidnavWrapper" class="sidnavWrapper" onclick="closeNav()">
+        </div>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#">About</a>
@@ -55,10 +121,10 @@
             <a href="#">Contact</a>
             <a href="/product/list">Products</a>
         </div>
-  
-        <div id="main">            
-           
-            <div ng-view></div>
+
+        <div id="main">
+
+            <div ng-view class="ng-enter"></div>
 
         </div>
 
@@ -66,35 +132,57 @@
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
-   
 
 
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
 
-    @Scripts.Render("~/bundles/angular")
-    @Scripts.Render("~/bundles/app")
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
 
- 
+        @Scripts.Render("~/bundles/angular")
+        @Scripts.Render("~/bundles/app")
 
-    <script>
-       function openNav() {
-           document.getElementById("mySidenav").style.width = "250px";
-           document.getElementById("sidnavWrapper").style.width = "100%";
-       }
 
-       function closeNav() {
-           document.getElementById("mySidenav").style.width = "0";
-           document.getElementById("sidnavWrapper").style.width = "0%";
-        }
 
-        $(function () {
-            $('.sidenav a').click(function () {
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("sidnavWrapper").style.width = "100%";
+            }
+
+            function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
                 document.getElementById("sidnavWrapper").style.width = "0%";
+            }
+
+            $(function () {
+                $('.sidenav a').click(function () {
+                    document.getElementById("mySidenav").style.width = "0";
+                    document.getElementById("sidnavWrapper").style.width = "0%";
+                });
+
+                $('#backbutton').click(function () {
+                    history.back();
+                });
+
+
+                $('#searc-icon').click(function () {
+                    $('#search-box').show();
+                    $('#mobsearch').val('');
+                    $('#mobsearch').focus();
+                });
+
+                $('#backbutton-search').click(function () {
+                    $('#search-box').attr("style","display:none !important");
+                });
+
+                
+
+
             });
-          });
-    </script>
+
+
+
+        </script>
 </body>
 </html>

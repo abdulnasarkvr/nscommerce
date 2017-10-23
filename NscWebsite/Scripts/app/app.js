@@ -7,15 +7,15 @@ var NsCommerceApp = angular.module('NsCommerceApp', ['ngRoute','toaster', 'ngAni
     $routeProvider
           .when('/', {
               templateUrl: '/SPA/Home/Index.html',
-              controller: 'ProductController'
+              controller: 'ProductController1'
           })
       .when('/product', {
           templateUrl: '/SPA/Product/Index.html',
-          controller: 'ProductController' 
+          controller: 'ProductController1' 
       })
      .when('/product/list', {
          templateUrl: '/SPA/Product/List.html',
-         controller: 'ProductController'
+         controller: 'ProductController1'
      })
 
      .when('/product/create', {
