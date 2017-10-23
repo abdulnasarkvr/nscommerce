@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Web.Http;
 using NsCommerce;
-using NsCommerce.ClientService;
 using System.Collections.Generic;
 
 namespace NscService.Controllers
@@ -55,8 +54,8 @@ namespace NscService.Controllers
             }
             catch (Exception ex)
             {
-               _return.Status = ActivityStatus.EXCEPTION;
-               _return.Message = "Something went wrong";
+               _return.status = ActivityStatus.EXCEPTION;
+               _return.message = "Something went wrong";
 
                 Utility.SaveException(ex);
             }
