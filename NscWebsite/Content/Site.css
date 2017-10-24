@@ -170,7 +170,7 @@ textarea {
 .sidenav a {
     padding: 15px 8px 15px 32px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     color: #4f667d;
     display: block;
     transition: 0.3s;
@@ -269,8 +269,8 @@ textarea {
 .sidenav-m-head {
     font-size: 15px !important;
     padding: 4px 8px 5px 32px !important;
-    background-color: #4f667d;
-    color: #ffffff !important;
+    background-color: #e8ebee;
+    color: #64788c !important;
 }
 .sidenav-m-goback {
     padding: 8px 8px 8px 32px !important;
@@ -281,6 +281,8 @@ textarea {
     text-align: center;
     color: #ffffff !important;
     font-size: 15px !important;
+    width: 240px;
+    overflow: hidden;
 }
 
 
