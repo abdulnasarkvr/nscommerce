@@ -150,7 +150,9 @@ textarea {
     background-color: #ffffff;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    /*padding-top: 60px;*/
+    /*display:none;
+    width:250px;*/
 }
 
 .sidnavWrapper {
@@ -166,9 +168,9 @@ textarea {
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 15px 8px 15px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     color: #4f667d;
     display: block;
     transition: 0.3s;
@@ -244,25 +246,54 @@ textarea {
     padding-right: 10px;
 }
 
+.menu-tab {
+
+}
+.account-tab{
+    display:none;
+}
 
 
+.sidenav-m-item {
+    border-bottom: solid 1px #e0e5e8;
+     width: 240px; 
+     overflow: hidden; 
+}
+
+.side-m-right-arrow {
+    float: right;
+    padding-right: 15px;
+}
 
 
+.sidenav-m-head {
+    font-size: 15px !important;
+    padding: 4px 8px 5px 32px !important;
+    background-color: #4f667d;
+    color: #ffffff !important;
+}
+.sidenav-m-goback {
+    padding: 8px 8px 8px 32px !important;
+    font-size: 15px !important;
+}
 
-
-
-
-
-
+.sidenav-m-profile {
+    text-align: center;
+    color: #ffffff !important;
+    font-size: 15px !important;
+}
 
 
 /* animate ------------------------ */
-
 .ng-enter {
     -webkit-animation: slideInRight 0.5s both ease-in;
     -moz-animation: slideInRight 0.5s both ease-in;
     animation: slideInRight 0.5s both ease-in;
 }
+
+
+
+
 
 /* ANIMATIONS
 ============================================================================= */
@@ -322,6 +353,9 @@ textarea {
     -moz-animation: slideInUp 0.5s both ease-in;
     animation: slideInUp 0.5s both ease-in;
 }*/
+
+
+
 
 
 /* scale up */

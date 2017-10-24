@@ -79,7 +79,7 @@
         </div>
 
  
-    <div class="navbar navbar-inverse navbar-fixed-top visible-sm visible-xs" id="search-box" style="">
+    <div class="navbar navbar-inverse navbar-fixed-top visible-sm visible-xs" id="search-box" style="display:none !important;">
         <div class="row" id="headerline2" >
 
             <div class="col-sm-1 col-xs-1">
@@ -109,13 +109,37 @@
 
         <div id="sidnavWrapper" class="sidnavWrapper" onclick="closeNav()">
         </div>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-            <a href="/product/list">Products</a>
+        <div id="mySidenav" class="sidenav ng-enter-menu">
+            @*<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>*@
+
+            <div class="row" style="height:50px;background-color:#2c353f" id="profile-btn">
+                <a href="#" class="sidenav-m-profile">Hello, Abdul</a>
+            </div>
+            <div class="row menu-tab account-tab ng-enter">
+               
+                <a href="#" class="go-back sidenav-m-goback"><span class="glyphicon glyphicon-arrow-left"></span> Back To Menu</a>
+                <a href="#" class="sidenav-m-head">Profile</a>
+
+                <a href="#"  class="sidenav-m-item">My Orders</a>
+                <a href="#"  class="sidenav-m-item">Payment Types</a>
+                <a href="#"  class="sidenav-m-item">Account</a>
+                <a href="#"  class="sidenav-m-item">Addresses</a>
+
+             
+            </div>
+            <div class="row menu-tab category-tab">
+              
+                <a href="#" class="sidenav-m-head">Categories</a>
+                <a href="#" class="sidenav-m-item">Fashion For Men <span class="glyphicon glyphicon-arrow-right side-m-right-arrow"></span></a>               
+
+                <a href="#"  class="sidenav-m-item">Fashion For Women</a>
+                <a href="/product/list" class="sidenav-m-item">Kids & Baby </a>
+                <a href="#"  class="sidenav-m-item">Electronics</a>
+                <a href="#"  class="sidenav-m-item">Books & Media</a>
+                
+
+            </div>
+        
         </div>
 
         <div id="main">
@@ -142,17 +166,26 @@
 
         <script>
             function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
+
+                $('.menu-tab').hide();
+                $('.category-tab').show();
+
+                //$('#mySidenav').show();
+               document.getElementById("mySidenav").style.width = "250px";
                 document.getElementById("sidnavWrapper").style.width = "100%";
             }
 
             function closeNav() {
+
+                $('.menu-tab').hide();
+                $('.category-tab').show();
+                //$('#mySidenav').hide();
                 document.getElementById("mySidenav").style.width = "0";
                 document.getElementById("sidnavWrapper").style.width = "0%";
             }
 
             $(function () {
-                $('.sidenav a').click(function () {
+                $('.sidenav-m-item').click(function () {
                     document.getElementById("mySidenav").style.width = "0";
                     document.getElementById("sidnavWrapper").style.width = "0%";
                 });
@@ -172,7 +205,17 @@
                     $('#search-box').attr("style","display:none !important");
                 });
 
-                
+                $('#profile-btn').click(function () {
+                    $('.menu-tab').hide();
+                    $('.account-tab').show();
+                });
+
+                $('.go-back').click(function () {
+                    $('.menu-tab').hide();
+                    $('.category-tab').show();
+                });
+
+                //menu-tab account-tab profile-btn go-back category-tab
 
 
             });
