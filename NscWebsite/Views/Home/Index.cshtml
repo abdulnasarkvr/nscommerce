@@ -32,7 +32,7 @@
 
      
         <div class="row" id="headerline1">
-            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 cartdiv" style="text-align:center; padding-left: 20px; ">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 cartdiv" style="text-align:center; padding-left: 20px; ">
                 <span class="glyphicon glyphicon glyphicon-arrow-left" id="backbutton" style="display:none;     font-size: 20px;"></span>
                 <button type="button" class="navbar-toggle" onclick="openNav()" style="float:none; padding:0;    padding-left: 3px;margin:0; display:inline !important;">
                     <span class="icon-bar"></span>
@@ -40,14 +40,14 @@
                     <span class="icon-bar"></span>
                 </button>
             </div> 
-            <div class="col-lg-1 col-md-2 col-sm-6 col-xs-6 nbranddiv">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 nbranddiv">
              <a href="#" class="navbar-brand" >contoso.com</a>
             </div>
 
-            <div class="col-lg-7 col-md-7 visible-md visible-lg" style="padding-left: 30px;">
+            <div class="col-lg-7 col-md-7" style="padding-left: 30px;">
 
                 <div class="input-group" style="margin-top: 8px;">
-                    <input type="text" class="form-control" placeholder="Search in contoso.com" style="border-color: #2c353f;background-color: #2c353f; color: #ffffff; max-width: 2000px;font-size: 18px;">
+                    <input type="text" class="form-control search-box-txt" placeholder="Search in contoso.com" style="border-color: #2c353f;background-color: #2c353f; color: #ffffff; max-width: 2000px;font-size: 18px;">
                     <span class="input-group-btn">
                         <button class="btn btn-secondary" type="button" style="background-color: #4f667d;  border-color: #2c353f; color: #ffffff;">Go!</button>
                     </span>
@@ -56,13 +56,7 @@
 
             </div>
 
-            <div class="col-sm-1 col-xs-1 visible-sm visible-xs cartdiv">
            
-                <span class="glyphicon glyphicon-search" style="padding-right: 5px;" id="searc-icon"></span>
-                 
-               
-               
-            </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 cartdiv">
 
@@ -79,7 +73,7 @@
         </div>
 
  
-    <div class="navbar navbar-inverse navbar-fixed-top visible-sm visible-xs" id="search-box" style="display:none !important;">
+    @*<div class="navbar navbar-inverse navbar-fixed-top visible-sm visible-xs" id="search-box" style="display:none !important;">
         <div class="row" id="headerline2" >
 
             <div class="col-sm-1 col-xs-1">
@@ -95,7 +89,7 @@
 
                 <div class="input-group">
 
-                    <input type="text" class="form-control" id="mobsearch" placeholder="Search in contoso.com" style="font-size: 18px;border-color: #2c353f;background-color: #2c353f;color: #ffffff;max-width: 2000px;padding-top: 7px;height: 40px;margin-top: 6px;">
+                    <input type="text" class="form-control search-box-txt" id="mobsearch" placeholder="Search in contoso.com" style="font-size: 18px;border-color: #2c353f;background-color: #2c353f;color: #ffffff;max-width: 2000px;padding-top: 7px;height: 40px;margin-top: 6px;">
                     <span class="input-group-btn">
                         <button class="btn btn-secondary" type="button" style="background-color: #4f667d;border-color: #2c353f;color: #ffffff;height: 40px;margin-top: 6px;/* width: 46px; */">Go!</button>
                     </span>
@@ -103,7 +97,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>*@
         @*@RenderBody()*@
 
 
@@ -149,7 +143,7 @@
         </div>
 
         <hr />
-        <footer>
+        <footer style="text-align: center;">
             <p>&copy; @DateTime.Now.Year contoso.com</p>
         </footer>
 
@@ -194,16 +188,7 @@
                     history.back();
                 });
 
-
-                $('#searc-icon').click(function () {
-                    $('#search-box').show();
-                    $('#mobsearch').val('');
-                    $('#mobsearch').focus();
-                });
-
-                $('#backbutton-search').click(function () {
-                    $('#search-box').attr("style","display:none !important");
-                });
+                
 
                 $('#profile-btn').click(function () {
                     $('.menu-tab').hide();
@@ -215,8 +200,18 @@
                     $('.category-tab').show();
                 });
 
-                //menu-tab account-tab profile-btn go-back category-tab
+                $('.search-box-txt').bind('input propertychange', function () {
+                    console.log($(this).offset().left);
+                    console.log($(this).val());
 
+                    var searchResult = '<div id="searchresult" style="width:' + parseInt($(this).width()+27) + 'px; height:100px; position:fixed;z-index:999999;left:'
+                        + parseInt($(this).offset().left) + 'px; top:' + parseInt($(this).offset().top + $(this).height()+14) + 'px; background-color:#ffffff;border:solid 1px #4f667d"></div>';
+
+                    console.log(searchResult);
+
+                    $("#searchresult").remove();
+                    $("body").append(searchResult);
+                });
 
             });
 
